@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qf2-ph-egF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact Us-->
+        <scene sceneID="mHe-Wd-FO7">
+            <objects>
+                <viewController id="JZp-S6-vEd" customClass="Contact" customModule="Icebreaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hgr-i1-Kij"/>
+                        <viewControllerLayoutGuide type="bottom" id="ntE-Ce-Xno"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Wt-AQ-bxJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Whale-Illust-Green-Sea-Icecream-Iiceberg-iphone-6-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rka-lt-lBZ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T6t-hs-6KH">
+                                <rect key="frame" x="0.0" y="190" width="600" height="80"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DAr-Ws-WVT"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Send Feedback">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="31" name="HelveticaNeue-CondensedBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="sendEmailButtonTapped:" destination="JZp-S6-vEd" eventType="touchUpInside" id="Qbh-Wy-YWL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TET-vE-W4Q">
+                                <rect key="frame" x="0.0" y="278" width="600" height="80"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Vist Developer's Website">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="31" name="HelveticaNeue-CondensedBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="developerWebsite:" destination="JZp-S6-vEd" eventType="touchUpInside" id="RWF-fY-2nx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ntE-Ce-Xno" firstAttribute="top" secondItem="TET-vE-W4Q" secondAttribute="bottom" constant="242" id="13o-6l-C0Q"/>
+                            <constraint firstItem="rka-lt-lBZ" firstAttribute="bottom" secondItem="ntE-Ce-Xno" secondAttribute="top" id="Hee-ZO-LMD"/>
+                            <constraint firstItem="TET-vE-W4Q" firstAttribute="leading" secondItem="T6t-hs-6KH" secondAttribute="leading" id="Ip7-QK-ARy"/>
+                            <constraint firstItem="rka-lt-lBZ" firstAttribute="trailing" secondItem="TET-vE-W4Q" secondAttribute="trailing" id="NCU-Yr-XGx"/>
+                            <constraint firstItem="TET-vE-W4Q" firstAttribute="trailing" secondItem="T6t-hs-6KH" secondAttribute="trailing" id="Ny2-MH-OHz"/>
+                            <constraint firstItem="T6t-hs-6KH" firstAttribute="top" secondItem="Hgr-i1-Kij" secondAttribute="bottom" constant="126" id="Twy-ya-cQV"/>
+                            <constraint firstItem="rka-lt-lBZ" firstAttribute="leading" secondItem="TET-vE-W4Q" secondAttribute="leading" id="hS4-6a-kgS"/>
+                            <constraint firstItem="rka-lt-lBZ" firstAttribute="top" secondItem="Hgr-i1-Kij" secondAttribute="bottom" id="pwW-TN-sAc"/>
+                            <constraint firstItem="TET-vE-W4Q" firstAttribute="top" secondItem="T6t-hs-6KH" secondAttribute="bottom" constant="8" symbolic="YES" id="xwo-IR-qsU"/>
+                            <constraint firstAttribute="trailing" secondItem="T6t-hs-6KH" secondAttribute="trailing" id="y2V-pn-7kj"/>
+                            <constraint firstItem="T6t-hs-6KH" firstAttribute="leading" secondItem="1Wt-AQ-bxJ" secondAttribute="leading" id="zYy-yG-Yrz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact Us" id="kih-kV-xN6">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Q0O-2x-h9s">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="gro-tJ-soc" kind="unwind" identifier="contactToMain" unwindAction="unwindToMainScreenViewController:" id="Bsk-6b-tmM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="arl-Xm-EDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gro-tJ-soc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="320"/>
+        </scene>
+        <!--MainScreen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="MainScreen" customClass="MainScreen" customModule="Icebreaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ocean_iceberg_minimalism_killer_whales_ice_cream_sea_74442_750x1334.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Le7-Fl-RcW">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUK-bY-gRy">
+                                <rect key="frame" x="0.0" y="519" width="600" height="81"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="USp-97-3ht"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Game Rules">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="31" name="HelveticaNeue-CondensedBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="P7r-3I-xj8" kind="show" id="J1q-0F-4Pi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03v-Ic-jA7">
+                                <rect key="frame" x="0.0" y="171" width="600" height="257"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="257" id="DN6-gm-TfF"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="54" name="HelveticaNeue-CondensedBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="Kdo-Lh-reN" kind="show" identifier="toSubmit" id="4fb-Uh-2wi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Le7-Fl-RcW" firstAttribute="trailing" secondItem="03v-Ic-jA7" secondAttribute="trailing" id="Edd-0e-QFU"/>
+                            <constraint firstItem="Le7-Fl-RcW" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Tvh-Ga-64X"/>
+                            <constraint firstItem="03v-Ic-jA7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f0v-gP-PTb"/>
+                            <constraint firstItem="xUK-bY-gRy" firstAttribute="leading" secondItem="03v-Ic-jA7" secondAttribute="leading" id="fHQ-fs-FBf"/>
+                            <constraint firstItem="xUK-bY-gRy" firstAttribute="trailing" secondItem="03v-Ic-jA7" secondAttribute="trailing" id="hpH-do-bvM"/>
+                            <constraint firstAttribute="trailing" secondItem="xUK-bY-gRy" secondAttribute="trailing" id="mQx-4t-jPi"/>
+                            <constraint firstItem="xUK-bY-gRy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rut-B2-Gam"/>
+                            <constraint firstItem="Le7-Fl-RcW" firstAttribute="leading" secondItem="03v-Ic-jA7" secondAttribute="leading" id="vWu-dj-pgu"/>
+                            <constraint firstItem="xUK-bY-gRy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="wBy-ba-XF0"/>
+                            <constraint firstItem="Le7-Fl-RcW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zsX-Ws-f5S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Icebreaker" id="maz-b2-ToB">
+                        <barButtonItem key="leftBarButtonItem" title="Contact Us" id="6Cr-my-Ooj">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="JZp-S6-vEd" kind="show" id="rbk-jh-Clw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="331"/>
+        </scene>
+        <!--GameRules-->
+        <scene sceneID="LDb-9L-Gjx">
+            <objects>
+                <viewController id="P7r-3I-xj8" userLabel="GameRules" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uqU-Xm-9id"/>
+                        <viewControllerLayoutGuide type="bottom" id="iSo-ay-tNp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B4b-EI-suG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Whale-Illust-Green-Sea-Icecream-Iiceberg-iphone-6-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="X2B-XL-Nxt">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.84999999999999998" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZX-11-Zf6">
+                                <rect key="frame" x="27" y="69" width="553" height="511"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">1)Everyone gather around in a circle                                                                                        2)Pass the phone around and let everyone enter their name and an unexpected, funny, scary, experienced truth about the themselves                                                                  3)Once the last person entered the information, hand the phone over to the Host(the owner of the phone)                                                                                                            4)Host will announce the truths and everyone must work together to figure out which truth belongs to who                                                                                                                              5)Keep clicking next whenever the person is found and share your stories with one another, have fun!</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="X2B-XL-Nxt" firstAttribute="bottom" secondItem="iSo-ay-tNp" secondAttribute="top" id="1DC-Mn-dV1"/>
+                            <constraint firstItem="X2B-XL-Nxt" firstAttribute="top" secondItem="uqU-Xm-9id" secondAttribute="bottom" id="Abf-TH-H8c"/>
+                            <constraint firstAttribute="trailing" secondItem="X2B-XL-Nxt" secondAttribute="trailing" id="EUb-Nh-zAe"/>
+                            <constraint firstItem="X2B-XL-Nxt" firstAttribute="leading" secondItem="B4b-EI-suG" secondAttribute="leading" id="FVw-BA-zDm"/>
+                            <constraint firstAttribute="bottom" secondItem="YZX-11-Zf6" secondAttribute="bottom" constant="20" symbolic="YES" id="MqV-KI-mn3"/>
+                            <constraint firstItem="YZX-11-Zf6" firstAttribute="top" secondItem="uqU-Xm-9id" secondAttribute="bottom" constant="5" id="VCx-dv-2QV"/>
+                            <constraint firstItem="YZX-11-Zf6" firstAttribute="leading" secondItem="B4b-EI-suG" secondAttribute="leadingMargin" constant="7" id="gFe-6R-ANJ"/>
+                            <constraint firstItem="YZX-11-Zf6" firstAttribute="trailing" secondItem="B4b-EI-suG" secondAttribute="trailingMargin" id="hCq-gU-YMQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Rules" id="6Qe-JV-8Fv">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="rOC-zo-Kmo">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="H4r-Y4-uZC" kind="unwind" identifier="gamerulesToMain" unwindAction="unwindToMainScreenViewController:" id="DQN-fo-5Uo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNM-PI-kGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="H4r-Y4-uZC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="1022"/>
+        </scene>
+        <!--Submition-->
+        <scene sceneID="h1C-NL-sz7">
+            <objects>
+                <viewController id="Kdo-Lh-reN" userLabel="Submition" customClass="SubmitViewController" customModule="Icebreaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FuS-Ob-ceK"/>
+                        <viewControllerLayoutGuide type="bottom" id="G49-Aj-6Da"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kzT-LC-cq9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Whale-Illust-Green-Sea-Icecream-Iiceberg-iphone-6-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EeI-kC-vfu">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RnB-wH-fbP">
+                                <rect key="frame" x="169" y="183" width="263" height="273"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="suy-Ji-OAz">
+                                <rect key="frame" x="263" y="484" width="74" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="faX-q8-LXY"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Submit">
+                                            <attributes>
+                                                <color key="NSColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="23" name="HelveticaNeue-CondensedBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="Submit:" destination="Kdo-Lh-reN" eventType="touchUpInside" id="GSa-Ui-BLu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kok-AD-akg">
+                                <rect key="frame" x="169" y="100" width="263" height="30"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="sE7-5K-VHs"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="EeI-kC-vfu" firstAttribute="leading" secondItem="kzT-LC-cq9" secondAttribute="leading" id="1fH-Wx-8Cy"/>
+                            <constraint firstItem="G49-Aj-6Da" firstAttribute="top" secondItem="RnB-wH-fbP" secondAttribute="bottom" constant="144" id="358-J2-y2P"/>
+                            <constraint firstItem="RnB-wH-fbP" firstAttribute="trailing" secondItem="kok-AD-akg" secondAttribute="trailing" id="98r-p4-Qct"/>
+                            <constraint firstItem="EeI-kC-vfu" firstAttribute="centerX" secondItem="RnB-wH-fbP" secondAttribute="centerX" id="D9L-AF-pNF"/>
+                            <constraint firstItem="RnB-wH-fbP" firstAttribute="leading" secondItem="kok-AD-akg" secondAttribute="leading" id="FHQ-mA-5q7"/>
+                            <constraint firstItem="EeI-kC-vfu" firstAttribute="bottom" secondItem="G49-Aj-6Da" secondAttribute="top" id="LHb-EM-ckd"/>
+                            <constraint firstItem="kok-AD-akg" firstAttribute="centerX" secondItem="kzT-LC-cq9" secondAttribute="centerX" id="M7g-5h-4OS"/>
+                            <constraint firstItem="EeI-kC-vfu" firstAttribute="top" secondItem="FuS-Ob-ceK" secondAttribute="bottom" id="Ody-Rx-isM"/>
+                            <constraint firstItem="kok-AD-akg" firstAttribute="top" secondItem="FuS-Ob-ceK" secondAttribute="bottom" constant="36" id="QzI-UO-ZeI"/>
+                            <constraint firstItem="G49-Aj-6Da" firstAttribute="top" secondItem="suy-Ji-OAz" secondAttribute="bottom" constant="83" id="ak8-wU-67a"/>
+                            <constraint firstItem="RnB-wH-fbP" firstAttribute="top" secondItem="kok-AD-akg" secondAttribute="bottom" constant="53" id="gGd-tc-OXE"/>
+                            <constraint firstItem="suy-Ji-OAz" firstAttribute="top" secondItem="RnB-wH-fbP" secondAttribute="bottom" constant="28" id="jnY-kP-YEx"/>
+                            <constraint firstItem="suy-Ji-OAz" firstAttribute="centerX" secondItem="RnB-wH-fbP" secondAttribute="centerX" id="wPH-Kw-Akp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Icebreaker" id="iYE-ZR-Zd0">
+                        <barButtonItem key="leftBarButtonItem" title="Quit" id="Flr-3J-VNV">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="niA-kq-7XS" kind="unwind" identifier="submitToMain" unwindAction="unwindToMainScreenViewController:" id="OqT-4y-cxz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Start Game" id="hBZ-9c-fVx">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="startGame:" destination="Kdo-Lh-reN" id="o0c-8L-jRz"/>
+                                <segue destination="HoN-ni-TCh" kind="show" identifier="toFinal" id="ymZ-rB-Yzw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="kok-AD-akg" id="DWP-Sw-gV7"/>
+                        <outlet property="startGame" destination="hBZ-9c-fVx" id="DrD-R8-IoL"/>
+                        <outlet property="truthTextView" destination="RnB-wH-fbP" id="tKh-ch-gke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XlE-Y2-WJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="niA-kq-7XS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1928" y="331"/>
+        </scene>
+        <!--Final-->
+        <scene sceneID="TSH-cg-e9O">
+            <objects>
+                <viewController id="HoN-ni-TCh" userLabel="Final" customClass="FinalViewController" customModule="Icebreaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q1Q-V6-xlB"/>
+                        <viewControllerLayoutGuide type="bottom" id="8iu-vK-gCJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hCF-3F-ik5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Whale-Illust-Green-Sea-Icecream-Iiceberg-iphone-6-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="a23-w6-re3">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhJ-jM-O5H" userLabel="RevealNAme">
+                                <rect key="frame" x="188" y="442" width="225" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="iMV-NQ-cB1"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Reveal Name">
+                                            <attributes>
+                                                <color key="NSColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="41" name="HelveticaNeue-CondensedBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="revealNameTapped:" destination="HoN-ni-TCh" eventType="touchUpInside" id="0UH-dT-okI"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SsR-o7-82G" userLabel="Name TExtField">
+                                <rect key="frame" x="169" y="100" width="263" height="30"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="5eQ-Vy-jRZ"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Um-bs-jui">
+                                <rect key="frame" x="170" y="490" width="263" height="72"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Game Over!">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="54" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.84999999999999998" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yg-Tc-p4d">
+                                <rect key="frame" x="169" y="145" width="263" height="273"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-lK-e4P">
+                                <rect key="frame" x="169" y="100" width="263" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="This person says...">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gIO-lK-e4P" firstAttribute="bottom" secondItem="SsR-o7-82G" secondAttribute="bottom" id="3xR-Jm-SEx"/>
+                            <constraint firstItem="a23-w6-re3" firstAttribute="leading" secondItem="hCF-3F-ik5" secondAttribute="leading" id="Adz-h0-Zb0"/>
+                            <constraint firstItem="gIO-lK-e4P" firstAttribute="leading" secondItem="SsR-o7-82G" secondAttribute="leading" id="CTO-aQ-f8x"/>
+                            <constraint firstItem="0Um-bs-jui" firstAttribute="trailing" secondItem="8yg-Tc-p4d" secondAttribute="trailing" constant="1" id="ImB-JH-LUU"/>
+                            <constraint firstItem="gIO-lK-e4P" firstAttribute="top" secondItem="SsR-o7-82G" secondAttribute="top" id="Jhp-cd-Vk7"/>
+                            <constraint firstItem="8yg-Tc-p4d" firstAttribute="trailing" secondItem="SsR-o7-82G" secondAttribute="trailing" id="L5P-iF-Zau"/>
+                            <constraint firstItem="0Um-bs-jui" firstAttribute="top" secondItem="8yg-Tc-p4d" secondAttribute="bottom" constant="72" id="Lz5-yk-zQ7"/>
+                            <constraint firstItem="gIO-lK-e4P" firstAttribute="trailing" secondItem="SsR-o7-82G" secondAttribute="trailing" id="S7w-Rm-d6q"/>
+                            <constraint firstItem="a23-w6-re3" firstAttribute="centerX" secondItem="lhJ-jM-O5H" secondAttribute="centerX" id="Sfb-fS-PeJ"/>
+                            <constraint firstItem="8iu-vK-gCJ" firstAttribute="top" secondItem="8yg-Tc-p4d" secondAttribute="bottom" constant="182" id="TOz-bc-hZ5"/>
+                            <constraint firstItem="SsR-o7-82G" firstAttribute="top" secondItem="q1Q-V6-xlB" secondAttribute="bottom" constant="36" id="aSN-z3-aGD"/>
+                            <constraint firstItem="SsR-o7-82G" firstAttribute="centerX" secondItem="hCF-3F-ik5" secondAttribute="centerX" id="c2U-Wf-QfK"/>
+                            <constraint firstItem="8yg-Tc-p4d" firstAttribute="leading" secondItem="SsR-o7-82G" secondAttribute="leading" id="fQF-ls-G8j"/>
+                            <constraint firstItem="8yg-Tc-p4d" firstAttribute="top" secondItem="SsR-o7-82G" secondAttribute="bottom" constant="15" id="gxn-Rf-byj"/>
+                            <constraint firstItem="0Um-bs-jui" firstAttribute="leading" secondItem="8yg-Tc-p4d" secondAttribute="leading" constant="1" id="hV3-8X-4Y3"/>
+                            <constraint firstItem="a23-w6-re3" firstAttribute="bottom" secondItem="8iu-vK-gCJ" secondAttribute="top" id="hm4-6T-EiV"/>
+                            <constraint firstItem="lhJ-jM-O5H" firstAttribute="top" secondItem="8yg-Tc-p4d" secondAttribute="bottom" constant="24" id="oAP-xf-HvB"/>
+                            <constraint firstItem="a23-w6-re3" firstAttribute="top" secondItem="q1Q-V6-xlB" secondAttribute="bottom" id="qm4-VL-sw6"/>
+                            <constraint firstItem="8iu-vK-gCJ" firstAttribute="top" secondItem="0Um-bs-jui" secondAttribute="bottom" constant="38" id="w7E-V1-k2h"/>
+                            <constraint firstItem="lhJ-jM-O5H" firstAttribute="centerX" secondItem="8yg-Tc-p4d" secondAttribute="centerX" id="wNG-YO-yWz"/>
+                            <constraint firstItem="0Um-bs-jui" firstAttribute="top" secondItem="lhJ-jM-O5H" secondAttribute="bottom" constant="-9" id="xML-5M-2E4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Icebreaker" id="b5V-wp-zIT">
+                        <barButtonItem key="leftBarButtonItem" title="Quit" id="M4v-AY-mRL">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="gUf-dF-oaW" kind="unwind" identifier="finalToMain" unwindAction="unwindToMainScreenViewController:" id="xK0-nl-kPp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="nse-4y-kaL">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="nextTapped:" destination="HoN-ni-TCh" id="ttj-Tj-ImF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="funny" destination="gIO-lK-e4P" id="KE3-s0-SwS"/>
+                        <outlet property="gameOver" destination="0Um-bs-jui" id="aw3-dg-ENV"/>
+                        <outlet property="nameTextField" destination="SsR-o7-82G" id="M4D-7p-PfI"/>
+                        <outlet property="next" destination="nse-4y-kaL" id="Q5r-sq-MfI"/>
+                        <outlet property="revealName" destination="lhJ-jM-O5H" id="cYo-YN-yoM"/>
+                        <outlet property="truthTextView" destination="8yg-Tc-p4d" id="BgW-02-FjI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9u-Rl-xai" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gUf-dF-oaW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="1100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="APf-ed-6zb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qf2-ph-egF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p4l-29-6tJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R0E-cT-SYj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Lv-19-zN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Whale-Illust-Green-Sea-Icecream-Iiceberg-iphone-6-wallpaper-ilikewallpaper_com.jpg" width="1080" height="1920"/>
+        <image name="ocean_iceberg_minimalism_killer_whales_ice_cream_sea_74442_750x1334.jpg" width="750" height="1334"/>
+    </resources>
+</document>
